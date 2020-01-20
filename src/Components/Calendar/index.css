@@ -1,0 +1,44 @@
+.container {
+    display: flex; /* or inline-flex */
+  }
+.cell-container{
+    width:inherit;
+    text-align: left;
+}
+.sq{
+  width:100;
+  height:100;
+}
+.daysofweek-container{
+  height:10%;
+  width: 20%;
+}
+.custom-edit-button{
+  border: black;
+    height: 100%;
+    width: 5%;
+}
+.button{
+  font-size: 30px;
+  background:none;
+  outline: none;
+  border: 0;
+    padding: 0;
+}
+.button:hover{
+  background-image: radial-gradient(circle,#F0F8FF 0%, #ffffff 50%);
+  outline: none;
+  border: 0;
+    padding: 0;
+}
+.button:active{
+  font-size: 25px;
+  background-image: radial-gradient(circle,#F0F8FF 50%, #ffffff 100%);
+  outline: none;
+  border: 0;
+    padding: 0;
+}
+button::-moz-focus-inner 
+{
+  border: 0;
+}
