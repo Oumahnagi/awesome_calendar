@@ -54,6 +54,12 @@ const App = (props) => {
       
       celldate={celldate}
       saveEvent={saveEvent} />);
+      if(val==""){
+         newevents[currDate.getMonth()+year][celldate].splice(num,1);
+         console.log("splice!");
+         console.log(newevents[currDate.getMonth()+year][celldate]);
+      
+      }
    //setevents(newevents);//1!!!!!!!
   }
 
