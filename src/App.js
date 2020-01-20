@@ -108,6 +108,14 @@ const App = (props) => {
             
             />);
          }
+         for(let i = 0; i <35-NUM_OF_DAYS_IN_MONTH[currDate.getMonth()]-currDate.getDay(); i++){
+            cells.push(<EmptyCell/>)
+         }
+         if(cells.length>35){
+            while(cells.length<42){
+               cells.push(<EmptyCell/>)
+            }
+         }
          firstSheet.push(<Calendar
             days = {daycells}
             cells = {cells}
@@ -117,9 +125,6 @@ const App = (props) => {
                cells = {cells}
                events = {firstSheetEvent[currDate.getMonth()+year]}
                />)
-               for(let i = 0; i <35-NUM_OF_DAYS_IN_MONTH[currDate.getMonth()]-currDate.getDay(); i++){
-                  cells.push(<EmptyCell/>)
-               }
                
                //calendarSheets.push(firstSheet);
                setCalendarSheets(firstSheet);
